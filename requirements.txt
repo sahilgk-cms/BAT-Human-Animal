@@ -1,0 +1,15 @@
+beautifulsoup4==4.12.3
+googletrans==4.0.2
+lxml_html_clean==0.4.1
+newsapi-python==0.2.7
+newspaper3k==0.2.8
+nltk==3.9.1
+numpy==1.26.4
+pandas==2.2.3
+pymongo==4.3.3
+PyPDF2==3.0.1
+python-dotenv==1.0.1
+python_dateutil==2.9.0.post0
+Requests==2.32.3
+urllib3==2.2.3
+serpapi==0.1.5
