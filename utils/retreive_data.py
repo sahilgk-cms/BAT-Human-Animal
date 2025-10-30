@@ -21,9 +21,9 @@ def retreive(caller):
     Accesses the MongoDB database and returns a list of existing documents.
     '''
     
-    if caller == 'RelevanceFiltering':
+    if caller == 'RelevanceFiltering' or caller == "LocationMapping":
         collection = scraped_collection_name
-    elif caller in ['EntityRecognition', 'Summarization', 'SentimentScoring', 'DocumentClustering', 'DiseaseMapping', 'LocationMapping']:
+    elif caller in ['EntityRecognition', 'Summarization', 'SentimentScoring', 'DocumentClustering', 'DiseaseMapping', 'CoordinatesMapping']:
         collection = processed_collection_name
     else:
         error_message = 'Invalid caller: ' + caller
