@@ -19,6 +19,7 @@ NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 SERP_API_KEY = os.getenv("SERP_API_KEY")
 
+DISTRICT_MAPPING_EXCEL_PATH = os.path.join(current_file_path, "Updated_District_Mapping.xlsx")
 
 CLASSIFICATION_MODEL = "MoritzLaurer/DeBERTa-v3-large-mnli-fever-anli-ling-wanli"
 
@@ -90,8 +91,7 @@ GOOGLE_ALERTS_URLS = [
     "https://www.google.com/alerts/feeds/09515345323936615134/4425273195027447560"
 ]
 
-
-QUERY =["Elephant",
+QUERY = ["Elephant",
          "Human Elephant conflict / killed",
          "elephant attack",
          "elephant killed",
